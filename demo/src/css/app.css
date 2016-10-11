@@ -1,0 +1,204 @@
+@charset "UTF-8";
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+ul {
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+html, body {
+  background-color: #e8e8e8;
+  border-radius: 5px; }
+
+html * {
+  font-family: "Helvetica","メイリオ","ヒラギノ角ゴ Pro","ＭＳ Ｐゴシック","sans-serif"; }
+
+a:link {
+  color: #747DFF; }
+
+a:visited {
+  color: #d53b69; }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .content {
+    width: 768px;
+    margin: auto; } }
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .content {
+    width: 1024px;
+    margin: auto; } }
+
+@media screen and (min-width: 1280px) and (max-width: 1600px) {
+  .content {
+    width: 1280px;
+    margin: auto; } }
+
+@media screen and (min-width: 1600px) {
+  .content {
+    width: 1580px;
+    margin: auto; } }
+
+.content {
+  background-color: #e8e8e8; }
+
+.img-logo {
+  zoom: 1.5; }
+
+.header-tile {
+  background-color: #ffffff;
+  margin: 4px 4px 0 4px;
+  padding: 3px;
+  border: solid 1px #b9b8d6;
+  border-bottom: none; }
+  .header-tile .title {
+    font-size: 160%; }
+  .header-tile span {
+    color: #000000; }
+
+.navigation-bar {
+  background-color: #e8e8e8;
+  margin: 0px 4px 0 4px; }
+  .navigation-bar .content {
+    width: 200px;
+    background-color: #ffffff;
+    border: solid 1px #b9b8d6;
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+    padding-bottom: 4px; }
+    .navigation-bar .content .content-item {
+      margin-left: 20px; }
+
+.tile {
+  background-color: #ffffff;
+  margin: 4px; }
+  .tile .tile-header {
+    padding: 3px;
+    border: solid 1px #b9b8d6;
+    border-bottom: none;
+    background-color: #f4f4f4; }
+    .tile .tile-header span {
+      color: #575454; }
+    .tile .tile-header select {
+      background-color: #ffffff;
+      border-color: #ffffff; }
+  .tile .tile-body {
+    padding: 3px;
+    border: solid 1px #b9b8d6;
+    border-top: none; }
+
+.tile-flex {
+  /* Safari */
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+  .tile-flex .start {
+    margin-right: auto; }
+  .tile-flex .end {
+    margin-left: auto; }
+
+.select {
+  margin-left: auto; }
+
+.title {
+  font-size: 120%;
+  color: #74758b; }
+
+.flex {
+  /* Safari */
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .flex li:first-child {
+    width: 100%; }

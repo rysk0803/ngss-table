@@ -1,0 +1,13 @@
+<div class="ngss-table">
+  <div id="tableHeader" class="ngss-table-header">
+    <div class="ngss-table-header-row" ng-style="tableWidth()">
+      <div ng-class="{'last-item': $last}" ng-repeat="k in keys" ng-style="columnWidth(k)">{{k.label}}</div>
+    </div>
+  </div>
+  <div ng-if="wData.length == 0" >No data to display</div>
+  <div id="tableBody" class="ngss-table-body">
+    <div ng-class="{'last-row': $last}" class="ngss-table-row" ng-repeat="i in wData" ng-style="tableWidth()" on-finish-repeat-render>
+      <div ng-class="{'last-item': $last}" ng-repeat="k in keys"  ng-style="columnWidth(k)">{{i[k.key]}}</div>
+    </div>
+  </div>
+</div>

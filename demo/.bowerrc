@@ -1,0 +1,4 @@
+{
+  "http-proxy" : "http://proxy.jfe-systems.com:8080",
+  "https-proxy" : "http://proxy.jfe-systems.com:8080"
+}

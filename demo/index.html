@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <title>table</title>
+  <meta name="robots" content="noindex,nofollow">
+  <!-- <link rel="stylesheet" href="dist/css/app.min.css"> -->
+  <link rel="stylesheet" href="src/css/angular-ry-table.css">
+  <link rel="stylesheet" href="src/css/app.css">
+</head>
+<body ng-app="app04">
+  <div class="content">
+    <div class="header-tile tile-flex">
+      <span class="start">
+        <span class="title">Title</span>
+      </span>
+    </div>
+    <div ng-controller="MainController">
+      <ul class="flex">
+        <li>
+          <div class="tile">
+            <div class="tile-header">
+              <span class="title">Table</span>
+              <input type="button" ng-click="change()"></input>
+            </div>
+            <div class="tile-body">
+                <!-- <ss-page-nation total-count="totalCount" pagerows="10" paging-func="pagingfunction" ></ss-page-nation> -->
+                <angular-ry-table keys="k2" data="d2" pagerows="10"></angular-ry-table>
+                <!-- angular-ry-table keys="k2" data="d2" paging-func="pagingfunction" total-count="totalCount" pagerows="10"></angular-ry-table> -->
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+  <script src="bower_components/angularjs/angular.min.js"></script>
+  <script src="bower_components/underscore/underscore-min.js"></script>
+  <!-- <script src="dist/js/app.min.js"></script> -->
+  <script src="src/js/angular-ry-table.js"></script>
+  <script src="src/js/app.js"></script>
+</body>
+</html>

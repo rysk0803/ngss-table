@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+$base-01: #e8e8e8;                  //背景色
+$base-02: #ffffff;                  //ボックスの背景色
+$base-03: #f4f4f4;                  //ボックスヘッダーの背景色
+$base-border-01: #b9b8d6;           //ベースの枠線の色
+$font-base01: #333333;              //ヘッダーのタイトル文字色
+$font-base02: #575454;              //ボックス内ヘッダーの文字色
+$font-base03: #FFFFFF;
+$font-table-header-01: #d68e00;     //テーブルヘッダーの文字色
+
+.ngss-table-paging{
+ padding: 3px;
+ & .paging-right-sitde{
+   width: 210px;
+   margin-left: auto;
+ }
+ & .paging-button{
+   width: 30px;
+   display: inline-block;
+   padding: 3px 6px;
+   margin-bottom: 0;
+   font-size: 12px;
+   font-weight: normal;
+   line-height: 1.42857143;
+   text-align: center;
+   white-space: nowrap;
+   vertical-align: middle;
+   touch-action: manipulation;
+   cursor: pointer;
+   user-select: none;
+   background-image: none;
+   border: 1px solid transparent;
+   border-radius: 4px;
+   &:hover,&:focus,&.focus{
+     color: #333333;
+     text-decoration: none;
+   }
+   &:active,
+   &.active {
+     background-image: none;
+     outline: 0;
+     box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+   }
+   &.disabled,
+   &[disabled]{
+     cursor: not-allowed;
+     filter: alpha(opacity=65);
+     box-shadow: none;
+     opacity: .65;
+   }
+ }
+ & .paging-disp{
+   width: 80px;
+   display: inline-block;
+   padding: 3px 6px;
+   margin-bottom: 0;
+   font-size: 12px;
+   font-weight: normal;
+   line-height: 1.42857143;
+   text-align: center;
+   white-space: nowrap;
+   vertical-align: middle;
+ }
+ & .spacer{
+   width: 30px;
+   display: inline-block;
+   padding: 3px 6px;
+   margin-bottom: 0;
+   font-size: 12px;
+   font-weight: normal;
+   line-height: 1.42857143;
+   text-align: center;
+   white-space: nowrap;
+   vertical-align: middle;
+ }
+
+}
+
+.ngss-table{
+  //background-color: $base-01;
+ * {
+  box-sizing: border-box;
+ }
+ height: 400px;
+ //border: 1px solid $base-border-01;
+ & .ngss-table-header{
+  overflow-x: hidden;
+ }
+ & .ngss-table-header-width-with-scroll{
+  width: calc(100% - 17px);
+ }
+ & .ngss-table-header-row{
+  //background-color: #b9b8d6;
+  background-color:$base-02;
+  color: $font-table-header-01;
+  display: flex;
+  border-top: 2px solid $base-border-01;
+  border-bottom: 2px solid $base-border-01;
+  & div {
+   font-size: 1.2em;
+   min-height: 30px;
+   padding: 5px;
+   //border-right: 1px solid $base-02;
+   &.last-item{
+     border-right: none;
+   }
+  }
+ }
+ & .ngss-table-body{
+  overflow: auto;
+  //height: 370px;
+ }
+ & .ngss-table-row{
+  display: flex;
+  border-bottom: 1px solid $base-border-01;
+  background-color: $base-02;
+  &.last-row{
+    border-bottom: 2px solid $base-border-01;
+  }
+  & div {
+   min-height: 30px;
+   display: inline-block;
+   vertical-align: middle;
+   padding: 5px;
+   word-break: break-all;
+   //border-right: 1px solid $base-border-01;
+   &.last-item{
+     border-right: none;
+   }
+  }
+ }
+}

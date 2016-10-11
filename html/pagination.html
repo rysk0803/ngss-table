@@ -1,0 +1,11 @@
+<div class="ngss-table-paging">
+  <div>
+    <input class="paging-button" type="button" value="<<" ng-click="first()" ng-disabled="isFirstPage"></input>
+    <input class="paging-button" type="button" value="<" ng-click="prev()" ng-disabled="isFirstPage"></input>
+    <span class="paging-disp"> {{page}} / {{pages}} </span>
+    <input class="paging-button" type="button" value=">" ng-click="next()" ng-disabled="isLastPage"></input>
+    <input class="paging-button" type="button" value=">>" ng-click="last()" ng-disabled="isLastPage"></input>
+    <span class="spacer"></span>
+    <span>{{total}}件中 {{startCount}}件目から{{endCount}}件目まで表示 </span>
+  </div>
+</div>
